@@ -1,16 +1,18 @@
 #https://docs.python.org/es/3/library/exceptions.html
+b=123456
 a=int(input("ingrese un valor menor a 20 "))
 # IndentationError
-def error(psdf):
-try:
+def error(a,b):
+
     if a <=20:
+            
             print("error")
     else:
             print("esta bien")
-except IndentationError:
+try:  
             print("esta mal")
-    
-  
-error(a)
+
+except IndentationError: 
+        error(a)
 
 
