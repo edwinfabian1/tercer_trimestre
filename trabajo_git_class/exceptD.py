@@ -1,6 +1,6 @@
 def edad ():
     try:
-        tuedad=int(input("introduce tu edad"))
+        tuedad=int(input("introduce tu edad" )) #se pide el ingreso 
         print(f'tu edad es  {tuedad}')
         #print('Tu edad es ',tuedad)
     except ValueError as e:    

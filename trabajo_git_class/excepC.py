@@ -1,13 +1,13 @@
 def try_syntax(numerator, denominator):
     try:
-        print(f'In the try block: {numerator}/{denominator}')
+        print(f'In the try block: {numerator}/{denominator}')# imprime la cadena de texto con el valor de las variables 11/0
         result = numerator / denominator
-    except ZeroDivisionError as zde:
-        print(zde)
+    except ZeroDivisionError as zde:        #si no sucede este error 
+        print(zde)                      
     else:
-        print('The result is:', result)
+        print('The result is:', result) 
         return result
-    finally:
+    finally:                #este llamada es opcional
         print('Exiting')
         #return "Fallo por zero"
 #print(try_syntax(12, 4))
