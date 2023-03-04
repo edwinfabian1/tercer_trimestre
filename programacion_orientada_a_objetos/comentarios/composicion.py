@@ -1,13 +1,13 @@
-class Aprendiz:
-    def __init__(self,nombre):
-        self.__nombre=nombre
-        self.__cursos=[]
+class Aprendiz:#definimos una clase llamada aprendiz
+    def __init__(self,nombre):#se inicializa el constructor con los atributos "es un objeto" 
+        self.__nombre=nombre#
+        self.__cursos=[]#
 
-    def agregarCurso(self,titulo):
-        self.__cursos.append(titulo)
+    def agregarCurso(self,titulo):#
+        self.__cursos.append(titulo)#
 
-    def getCursos(self):
-        return self.__cursos
+    def getCursos(self):#
+        return self.__cursos#
 
 class Curso:
     def __init__(self,titulo):
