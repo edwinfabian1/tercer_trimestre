@@ -19,6 +19,7 @@ class Persona:#se llama la clase y se le coloca
     
     
     
+    
     def metodo(self):
         print('Soy un método')
 

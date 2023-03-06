@@ -12,6 +12,7 @@ class empleado:
         self.__salario=salario
         self.__horas=horas
     
+    
     def getnombre(self):
         return self.__nombre
 
