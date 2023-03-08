@@ -17,16 +17,16 @@ class Curso:#se define una segunda clase llamada cursos
         return self.__titulo#retorna el parametro titulo
     
 a=Aprendiz('Martha')
-c1=Curso('Python Intermedio')
-c2=Curso('Python Basico')
-c3=Curso('Introduccion a Java')
+c1=Curso('Python Intermedio')#se crea un primer objeto
+c2=Curso('Python Basico')#se crea un segundo objeto
+c3=Curso('Introduccion a Java')#se crea un tercer objeto
 
-a.agregarCurso(c1)
+a.agregarCurso(c1)#las tres lineas agregan a curso cada objeto como argumento
 a.agregarCurso(c2)
 a.agregarCurso(c3)
 
-print(a.getCursos())
+print(a.getCursos())#en esta impresion devuelve el nombre de los cursos en los que esta la aprendiz
 
 
 for curso in a.getCursos():#el for esta recoriendo la lista des todos los cursos y los agrega 
-    print(curso.getTitulo())#imprime en pantalla 
+    print(curso.getTitulo())#toma los objetos de cruso y los muestra en pantalla 

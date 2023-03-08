@@ -1,11 +1,11 @@
 class Persona:#se llama la clase y se le coloca 
-    def __init__(self,nombre,documento): #con esta funcion se inicializa el constructor
+    def __init__(self,nombre,documento): #con esta funcion se inicializa el constructor 
         self.__nombre=nombre
         print('Activando constructor')#este print indica que ya inicia a correr el constructor
         self.__documento=documento
        
     def getNombre(self):#con getter podemos acceder al valor 
-        return self.__nombre  #con el return tomamos los valores 
+        return self.__nombre  #con el return tomamos los valores de nombre
     
     def setNombre(self, nombre):
         self.__nombre=nombre#con self podemos vincular los atributos    
@@ -15,8 +15,7 @@ class Persona:#se llama la clase y se le coloca
         self.__documento=documento
         
     def getdocumento(self):
-        return self.__documento#en esta linea le indicamos al 
-    
+        return self.__documento#con este return tomamos el valor de documento
     
     
     
@@ -30,4 +29,4 @@ ob.setNombre('Maria')#este metodo cambia el nombre en este caso cambiaria Ana po
 ob.getdocumento
 ob.setdocumento
 print(ob.getNombre())
-print(ob.getdocumento())
+print(ob.getdocumento())#con este getter podemos ingresar al valor que tiene documento y lo muestre

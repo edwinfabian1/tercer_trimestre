@@ -11,8 +11,8 @@ class A2:#se define una segunda clase llamada A2
         print('Hola desde A2')#
 
 
-class B(A2,A1):
-    def __init__(self):
+class B(A2,A1):#se define una tercera clase llamada B tiene como herencia las dos clases anteriores
+    def __init__(self):#se inicializa un tercer constructor
         pass
     def saludo(self):
         print('Hola desde B')

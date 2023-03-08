@@ -3,4 +3,4 @@ blog_posts = [{'Photos': 3, 'Megusta': 21, 'comentarios': 2}, {'Megusta': 13, 'c
 total_Megusta = 0   #es una variable que inicia desde cero
 
 for post in blog_posts:     # se crea un variable llamada post que con el for va recorrer blog_sposts
-    total_Megusta = total_Megusta + post['photos']
+    total_Megusta = total_Megusta + post['Megusta']

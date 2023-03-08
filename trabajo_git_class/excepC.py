@@ -4,11 +4,11 @@ def try_syntax(numerator, denominator):
         result = numerator / denominator
     except ZeroDivisionError as zde:        #si no sucede este error 
         print(zde)                      
-    else:
+    else:                                   #hace este else
         print('The result is:', result) 
-        return result
+        return result                   #hace el retorno en result
     finally:                #este llamada es opcional
         print('Exiting')
         #return "Fallo por zero"
 #print(try_syntax(12, 4))
-print(try_syntax(11, 0))
+print(try_syntax(11, 0))    #imprime que no hay nada 
