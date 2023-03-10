@@ -1,9 +1,10 @@
 class Registro:
-    def __init__(self,documento,nombre,edad,num_contacto):
+    def __init__(self,documento,nombre,edad,num_contacto,correo):
         self.__documento=documento
         self.nombre=nombre
         self.edad=edad
         self.num_contacto=num_contacto
+        self.correo=correo
 #getter
     def getdocumento(self):
         return self.__documento
@@ -16,6 +17,9 @@ class Registro:
     
     def getnum_contacto(self):
         return self.num_contacto
+    
+    def getcorreo(self):
+        return self.correo
 #setter
     
     def setdocumento(self,documento):
@@ -30,13 +34,17 @@ class Registro:
     def setnum_contacto(self,num_contacto):
         self.num_contacto=num_contacto
 
-regis=Registro('21653215','andres','15','3155546415\n')
+    def setcorreo(self,correo):
+        self.correo=correo
+
+regis=Registro('21653215','andres','15','3155546415','adrew@gmail.com\n')
 
 print(regis.getdocumento())
 print(regis.getnombre())
 print(regis.getedad())
 print(regis.getnum_contacto())
-regis.setdocumento
+print(regis.getcorreo())
+regis.setdocumento("fgdh")
 regis.getdocumento
 
 
